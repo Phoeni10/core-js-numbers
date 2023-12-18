@@ -87,8 +87,8 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   x + 8 = 0       => -8
  *   5*x = 0         => 0
  */
-function getLinearEquationRoot(/* a, b */) {
-  throw new Error('Not implemented');
+function getLinearEquationRoot(a, b) {
+  return -b / a;
 }
 
 /**
@@ -109,6 +109,10 @@ function getLinearEquationRoot(/* a, b */) {
  *   (0,1) (0,1)     => 0
  */
 function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
+  /* const deltaX = x2 - x1;
+  const deltaY = y2 - y1;
+  const angleRad = Math.atan2(deltaY, deltaX);
+  return angleRad; */
   throw new Error('Not implemented');
 }
 
@@ -126,6 +130,9 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
  *     0     => 0
  */
 function getLastDigit(/* value */) {
+  /* const str = toString(value);
+  const lastLetter = str.slice(str.length - 1);
+  return parseInt(lastLetter, 10); */
   throw new Error('Not implemented');
 }
 
@@ -141,6 +148,10 @@ function getLastDigit(/* value */) {
  * '-525.5'     => -525.5
  */
 function parseNumberFromString(/* value */) {
+  /* if (value.includes('.')) {
+    return parseFloat(value);
+  }
+  return parseInt(value, 10); */
   throw new Error('Not implemented');
 }
 
